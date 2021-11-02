@@ -1,0 +1,278 @@
+@font-face {font-family: "GrandSlang Roman"; src: url("//db.onlinewebfonts.com/t/0fddb08144cea533dcd3d39388b7ffbe.eot"); src: url("//db.onlinewebfonts.com/t/0fddb08144cea533dcd3d39388b7ffbe.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/0fddb08144cea533dcd3d39388b7ffbe.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/0fddb08144cea533dcd3d39388b7ffbe.woff") format("woff"), url("//db.onlinewebfonts.com/t/0fddb08144cea533dcd3d39388b7ffbe.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/0fddb08144cea533dcd3d39388b7ffbe.svg#GrandSlang Roman") format("svg"); }
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url(./assets/fonts/neue-montreal/NeueMontreal-Regular.otf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #000;
+  font-family: "Neue Montreal";
+}
+
+.home{
+  overflow: hidden;
+}
+
+// #js-scroll {
+//   height: 200%;
+// }
+
+nav{
+  position: fixed !important;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  z-index: 2;
+
+  .menu__logo{
+    padding: 40px;
+    a{
+      color: #fff;
+      font-size: 14px;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+  }
+
+  .menu__items{
+    display: flex;
+    &-link{
+      padding: 40px;
+      a{
+        color: #fff;
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: none;
+        &.active{
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.container{
+  margin-top: 200px;
+  margin-left: 200px;
+  .container__item{
+    position: relative;
+    width: 540px;
+    height: 250px;
+    margin: 50px 500px 20px 80px;
+    background-size: cover;
+
+    @media (max-width: 900px) {
+      width: 300px;
+      height: 200px;
+      margin: 50px 100px 20px 80px;
+    }
+
+    &-header{
+      h1{
+        position: relative;
+        top: 40px;
+        left: 0;
+        right: 0;
+        width: 600px;
+        height: 360px;
+        font-size: 100px !important;
+
+        @media (max-width: 900px) {
+          font-size: 30px !important;
+          left: -50%;
+        }
+      }
+    }
+
+    h1{
+      position: absolute;
+      left: 40px;
+      bottom: -40px;
+      color: #fff;
+      font-family: "GrandSlang Roman";
+      font-weight: lighter;
+      font-size: 64px;
+
+      @media (max-width: 900px) {
+        font-size: 40px;
+        bottom: -20px;
+      }
+    }
+
+    a{
+      color: #fff;
+      text-decoration: none;
+    }
+
+    &-1{
+      background: url(../src/assets/img/img-one.jpeg) no-repeat 50% 50%;
+    }
+
+    &-2{
+      background: url(../src/assets/img/img-two.jpeg) no-repeat 50% 50%;
+    }
+
+    &-3{
+      background: url(../src/assets/img/img-three.jpeg) no-repeat 50% 50%;
+    }
+
+    &-4{
+      background: url(../src/assets/img/img-four.jpeg) no-repeat 50% 50%;
+    }
+
+    &-5{
+      background: url(../src/assets/img/img-five.jpeg) no-repeat 50% 50%;
+    }
+
+  }
+}
+
+.about__container{
+  width: 50%;
+  margin: 180px 0 100px 100px;
+  padding: 40px;
+
+  @media (max-width: 900px) {
+    width: 70%;
+    margin: 140px 0 60px 40px;
+  }
+
+  p{  
+    margin: 60px 0;
+    color: #fff;
+    font-size: 46px;
+    font-weight: 400;
+    z-index: 2;
+
+    span{
+      font-family: "GrandSlang Roman"
+    }
+  }
+
+  &-contact-link{
+    a{
+      color: #fff;
+    }
+  }
+
+  &-link{
+    font-size: 26px;
+
+    a{
+      color: #fff;
+      font-size: 26px;
+    }
+  }
+  
+}
+
+
+
+.project__container{
+  width: 70%;
+  margin: 100px auto;
+  color: #fff;
+  padding: 120px 40px;
+  text-align: center;
+
+  &-title{
+    h1{
+      color: #fff;
+      font-family: "GrandSlang Roman";
+      font-size: 140px;
+    }
+  }
+
+  &-subtitle{
+    margin: 20px 0;
+    font-family: "Neue Montreal";
+    font-size: 16px;
+    p{
+
+    }
+  }
+
+  &-images{
+    position: relative;
+    width: 100%;
+    height: 2000px;
+    padding: 40px 0;
+    .project__image{
+      background: red;
+      width: 600px;
+      height: 500px;
+      margin: 40px auto;
+      background-size: cover;
+      &-one{
+        background: url(../src/assets/img/img-one.jpeg) no-repeat 50% 50%;
+      }
+
+      &-two{
+        background: url(../src/assets/img/img-two.jpeg) no-repeat 50% 50%;
+        position: relative;
+        top: -100px;
+        left: -260px;
+      }
+
+      &-three{
+        background: url(../src/assets/img/img-three.jpeg) no-repeat 50% 50%;
+        position: relative;
+        left: 300px;
+      }
+
+      &-four{
+        background: url(../src/assets/img/img-four.jpeg) no-repeat 50% 50%;
+        position: relative;
+        top: -200px;
+        left: -100px;
+      }
+
+    }
+  }
+
+  .project-next-link{
+    position: relative;
+    top: -100px;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+      color: #fff;
+      text-decoration: none;
+      font-family: "GrandSlang Roman";
+      font-size: 160px;
+    }
+  }
+
+}
+
+.anime-js-title .letter{
+  display: inline-block;
+  line-height: 1em;
+}
+
+
+.cursor-follow{
+  position: absolute;
+  background: url(../src/assets/img/cursor.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  width: 300px;
+  height: 400px;
+  z-index: -1;
+  user-select: none;
+  pointer-events: none;
+  transform: translate(5px, 5px);
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+}
