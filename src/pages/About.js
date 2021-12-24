@@ -57,7 +57,7 @@ const About = () => {
                 <p className="about__container-data" data-scroll>Hi! My name is <span>Kurt Davenport</span> and I'm a digital
                 designer, born in <span>Malmo,</span> Sweden.</p>
 
-                <p data-scroll>If you have any questions or would like to have a chat, don't hesitate to <span class="about__container-contact-link"><Link to="/">get in touch.</Link></span></p>
+                <p data-scroll>If you have any questions or would like to have a chat, don't hesitate to <span className="about__container-contact-link"><Link to="/">get in touch.</Link></span></p>
 
                 <p className="about__container-link" data-scroll>
                     <Link to="/">Winner of Webdesign Honorable mention and <br/> design excellence</Link>.
